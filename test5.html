@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Open Snapchat</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <p style="text-align:center; padding-top:100px;">Opening Snapchat...</p>
-    <a id="snap" href="snapchat://add/katecjky" style="display:none;">Open</a>
-    <script>
-      setTimeout(function() {
-        document.getElementById('snap').click();
-      }, 1000);
-    </script>
-  </body>
+<head>
+  <title>Add on Snapchat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      text-align: center;
+      padding-top: 100px;
+      font-family: sans-serif;
+    }
+    .snap-button {
+      font-size: 18px;
+      padding: 15px 30px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <p>Tap the button below to add on Snapchat:</p>
+  <button class="snap-button" onclick="window.location='snapchat://add/katecjky'">
+    Add on Snapchat
+  </button>
+</body>
 </html>
