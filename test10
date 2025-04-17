@@ -1,0 +1,38 @@
+<script>
+        function getMobileOperatingSystem() {
+           var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+           if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+           {
+              return 'iOS';
+           }
+           else if( userAgent.match( /Android/i ) )
+           {
+              return 'Android';
+           }
+           else
+           {
+              return 'unknown';
+           }
+        }
+
+        function onLoad(){
+           var urlLink1 = "http://www.snapchat.com/add/katecjlc";
+           switch(getMobileOperatingSystem()){
+               case 'Android':
+                    urlLink1 = "snapchat://user?username=katecjlc";
+
+                    break;
+               case 'iOS':
+                    urlLink1 = "snapchat://user?username=katecjlc";
+
+                    break;
+               default:
+                    break;
+            }
+           document.getElementById('yourLink1').setAttribute('href', urlLink1);
+
+        }
+        window.onload = onLoad;
+        </script>
+        
+        <a id="yourLink1" class="grey-text text-lighten-3" target="_blank">Link1</a>
