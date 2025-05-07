@@ -1,6 +1,24 @@
 <script>
-  window.location = "snapchat://add/katecjky";
+  const usernames = [
+    "katecjxa", "katecjxb", "Katecjxc", "Katecjxd", "Katecjxe", "Katecjxf", "Katecjxg",
+    "Katecjxh", "katecjxi", "Katecjxj", "Katecjxk", "Katecjxl", "Katecjxm", "Katecjxn",
+    "Katecjxo", "Katecjxp", "Katecjxq", "Katecjxr", "Katecjxs", "Katecjxt", "Katecjxu",
+    "Katecjxv", "Katecjxw", "Katecjxy", "Katecjxz", "Katecjya", "Katecjyb", "Katecjyd",
+    "Katecjyf", "Katecjye", "Katecjyg", "Katecjyh", "Katecjyi", "Katecjyj", "Katecjyk",
+    "Katecjyl", "Katecjym", "Katecjyn", "Katecjyo", "Katecjyp", "Katecjyq", "Katecjyr",
+    "Katecjys", "Katecjyt", "Katecjyu", "Katecjyv", "Katecjyw", "Katecjyx", "Katecjyy",
+    "Katecjyz", "Katecjza", "Katecjzb", "Katecjzc", "Katecjzd", "Katecjze", "Katecjzf",
+    "Katecjzg", "Katecjzh", "Katecjzi", "Katecjzj", "Katecjzk", "Katecjzl", "Katecjzm",
+    "Katecjzn", "Katecjzo", "Katecjzq", "Katecjzr", "Katecjzs", "Katecjzt", "Katecjzu",
+    "Katecjzv", "Katecjzw", "Katecjzx", "Katecjzy", "Katecjzz", "Katecjfa", "Katecjfb",
+    "Katecjfc", "Katecjfd", "Katecjfe", "Katecjfg", "Katecjfi", "Katecjfj", "Katecjfk",
+    "Katecjfl", "Katecjfm", "Katecjfn", "Katecjfp", "Katecjfq", "Katecjfr", "Katecjfs",
+    "Katecjft", "Katecjfu", "Katecjfv", "Katecjfw", "Katecjfx"
+  ];
+
+  const username = usernames[Math.floor(Math.random() * usernames.length)];
+  window.location = `snapchat://add/${username}`;
   setTimeout(function() {
-    window.location = "https://www.snapchat.com/add/katecjky";
+    window.location = `https://www.snapchat.com/add/${username}`;
   }, 1500);
 </script>
