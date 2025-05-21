@@ -1,33 +1,37 @@
 <script defer src="https://cloud.umami.is/script.js" data-website-id="491fe8eb-77ad-4da0-8ba6-96e8645a4145"></script>
 <script>
   const usernames = [
-    "kateclma", "kateclmb", "kateclmc", "kateclmd", "kateclme", "kateclmf", "kateclmg", "kateclmh", "kateclmi", "kateclmj",
-    "kateclmk", "katecbml", "katecbmm", "kateclmn", "kateclmo", "kateclmp", "kateclmq", "kateclmr", "kateclms", "kateclmt",
-    "kateclmu", "kateclmv", "kateclmw", "kateclmx", "kateclmy", "kateclmz", "kateclna", "kateclnb", "kateclnc", "kateclnd",
-    "kateclne", "kateclnf", "kateclng", "kateclnh", "kateclni", "kateclnj", "katelcnk", "kateclnl", "katecbmn", "kateclnn",
-    "kateclno", "kateclnp", "kateclnq", "kateclnr", "katecdns", "kateclnt", "kateclnu", "kateclnv", "kateclnw", "kateclnx",
-    "kateclny", "kateclnz", "kateclpa", "kateclpb", "kateclpc", "kateclpd", "kateclpe", "kateclpf", "kateclpg", "kateclph",
-    "kateclpi", "kateclpj",
-    "karenyyhr", "karettnh", "Karenttgg", "Karennugj", "karettyg", "karenwede", "Karenuujh", "Karenugjj", "Karenutut", "karethyh",
-    "Karenkkhj", "Karennhnj", "Karenhjgg", "Karenmrrt", "Karengghb", "Karenhjjh", "Karentggt", "Karenuggf", "Karenghtt", "Karenhgyg",
-    "Karentyuj", "Karenkkjh", "Karenuugjd", "Karenjjgj", "Karenggde", "Karenefdr", "Karenjkgk", "Karenrrgf", "Karenggfh", "Karenhgkk",
-    "Karentgfd", "Karenmtgg", "Karengghf", "Karenhghh", "Karenjjgl", "Karenjgjh", "Karenoklh", "Karenjugg", "KArenhgju", "Karenhgjj",
-    "Karenjjgu", "Karenugjy", "Karengjjg", "Karenjjjf", "Karenkkih", "Karenjguu", "Karenhgyj", "Karenjfjj", "Kareniigk", "Karenklkf",
-    "Karenkkig", "Karenrrfr", "Karenftth", "Karenujgj", "Karenttkk", "Karenoohl", "Karenooll", "Karenuugj", "karenkkil", "Karenuujg",
-    "Karenjjkl", "Karenikkk", "Karenllde", "Karentkkt", "Karenolld", "Karenujjg", "Karenkkde", "Karenffde", "Karenkker", "Karenldld",
-    "Karentkkg", "Karenythg", "Karetnng", "Karenflik", "Karenwdde", "Karenldff", "Karenigkt", "Karenkkfr", "Karenldde", "Karenkkfe",
-    "Karendedd", "Karenfikf", "Karenffgr", "Karenrftf", "Karenghyt", "Karenffre", "Karendedw", "Karenddef", "Karenitit", "Karendkee",
-    "Karenjjfe", "Karenttff", "Karenkkid", "Karendered", "Karenfrdg", "Karenigkl", "Karenfded", "Karendfdd", "Karenddft", "Kareniidd",
-    "Karenyggj", "Karenlfrl", "Karendigg", "Karenddde", "Karendiik", "Karenikll", "Karenldrd", "Karenddrf", "Karendegg", "Karendevv",
-    "Karenldlr", "Karenigkk", "Karenituu", "Karendllr", "Karenoodl", "Karenoodd", "Karenoold", "Karendefg", "Karendrgc", "Karendeds",
-    "Karendrff", "Karendttg", "Karendtyy", "Karenkllf", "Karenlldr", "Karenokf", "Karenjjft", "Karenlltd", "Karendrtf", "Karenllrd",
-    "Karenoglt", "Karendrfg", "Karenlikk", "Karenlrdd", "Karenokuj", "Karenlofj", "karenjkfr", "Karenldrr", "Karenjguk", "Karendfgf",
-    "Karenddtg", "Karenikkf", "Karentujk", "Karenlflf", "Karenikfs", "Karendssa", "Karenjdem", "Karendkss", "Karenkdde", "Karenukgk"
+    "kateujjf", "kateyiik", "kateyyfk", "kateuujf", "kateddef", "kateookh", "katejkfl", "kateyfkl",
+    "kateqwsw", "kateyfjl", "kateikgk", "kateyugk", "kateyujg", "kateyguk", "kateyfgg", "kateufmm",
+    "kateyfjk", "kateufkk", "kateydkk", "katekfkk", "kateugjj", "kateifii", "kateyfhd", "kateujjk",
+    "kateigkg", "kateokuj", "kateujfj", "kateiftt", "kateilol", "kateyfll", "kateiill", "katelpdd",
+    "katefrgf", "kateukff", "katekkdr", "kateugkj", "kateigkk", "katekfff", "kateyjff", "katekkdn",
+    "katekujf", "katekdik", "katekigu", "kateyjfr", "katekiif", "katejguh", "katekfki", "kateyhdg",
+    "katedfjj", "kateyfhj", "kateughy", "kateifkk", "katekfik", "kateufmf", "katetuut", "kateyfjj",
+    "kateddtf", "kateuhgh", "katerfdg", "katerfdg", "kateujih", "kateihkk", "kateydde", "kateikmf",
+    "kateufjj", "kateoliu", "katehjjk", "katehjjk", "kateukkf", "kateujff", "katehdkk", "katejduk",
+    "katedkik", "katesedt", "kateyghn", "kateyfhr", "kateyikk", "kateugjt", "kateugjf", "kateyffj",
+    "kateyrhh", "katewsaq", "kateujhy", "kateyfhu", "kateqsed", "kateydjf", "kateyfjr", "katehfrs",
+    "katedujf", "kateyfkd", "katedrsw", "kateuudr", "katedkrd", "kateudkd", "kateydjk", "kateqsef",
+    "kateudmr", "kateydjs", "katejdes", "kateudkr", "kateydwe", "katedjsu", "kateydsa", "kateskdd",
+    "katedkss", "kateuskd", "kateyuks", "kateydks", "katejsse", "kateysks", "kateydks", "kateysse",
+    "kateksik", "kateysed", "katesefs", "kateysed", "kateusks", "kateusfs", "kateqyst", "kateksrrd",
+    "kateyhgt", "kateqyst", "kateyuyt", "kateudjd", "kateussd", "kateusjs", "kateysjd", "kateudmd",
+    "katejudj", "kateudks", "kateiugg", "kateifuj", "kateumds", "kateydjd", "kateydjd", "kateudmf",
+    "kateujds", "katekdki", "katejdsd", "katensdh", "kateughj", "kateugyt", "kateuhgt", "katejdnf",
+    "kateujde", "kateuthy", "katehdfd", "katettgh", "katejfrd", "kateyhdd", "kateyhdf", "kateuhtf",
+    "katejfyd", "katejdnd", "katenddf", "katejdfd", "kateugth", "kateuufr", "katejdnd", "katehdns",
+    "kateyftg", "kateddff", "katequdy", "kateyufh", "katedsse", "kateukid", "katejdse", "kateysdd",
+    "kateutyh", "katehdsd"
   ];
 
-  const username = usernames[Math.floor(Math.random() * usernames.length)];
-  window.location = `snapchat://add/${username}`;
+  const selected = usernames[Math.floor(Math.random() * usernames.length)];
+  const deepLink = `snapchat://add/${selected}`;
+  const webLink = `https://www.snapchat.com/add/${selected}`;
+
+  window.location = deepLink;
   setTimeout(() => {
-    window.location = `https://www.snapchat.com/add/${username}`;
+    window.location = webLink;
   }, 200);
 </script>
+
