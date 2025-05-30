@@ -1,27 +1,16 @@
 <script defer src="https://cloud.umami.is/script.js" data-website-id="491fe8eb-77ad-4da0-8ba6-96e8645a4145"></script>
 <script>
   const usernames = [
-    "katepjm", "katewdrf", "katepufj", "kateoujg", "kateoiyt", "katewsxr", "kateedcf", "kateqcyj",
-    "kateufkd", "kateqxef", "katewuds", "kateudjf", "katewsef", "kateigjh", "kateyfju", "katewcyh",
-    "katewmih", "kateqpih", "katemhyg", "kateqpiu", "katenugy", "kateokuh", "katenguj", "katecygh",
-    "katenugj", "katewmjg", "kateugnh", "kateogmn", "Katecyfh", "katenygh", "kateyhfn", "katenhgy",
-    "katenhgu", "katemuhg", "katenugk", "katenuhv", "katewmij", "katenukm", "katenugm", "katemudh",
-    "katemuhk", "katefihk", "katemjuh", "katewmik", "katemihg", "katenugh", "katemihk", "katewnug",
-    "kateqmijf", "kateugkg", "kateqmok", "katenufd", "katenfds", "katexikh", "katexmjg", "katepujh",
-    "katemhju", "katezohj", "katenbmg", "kateqmih", "katemhuj", "katemhij", "kateqshg", "katepuyr",
-    "katenhgd", "kateugjn", "katengij", "katemhik", "katepwjh", "katemugh", "katepuhj", "katepehg",
-    "katevthg", "katevuhg", "kateqoij", "katecuhg", "kateokhj", "katepihk", "katemihj", "katenoiu",
-    "kateywmj", "kateectg", "katenedf", "kateugjd", "katequfg", "kateumug", "katemjug", "katemuhj",
-    "kateignh", "katewmug", "katenugd", "katenuyt", "kateqnug", "katequgt", "katecyhg", "katesyfh",
-    "katewdcf", "katedrfv", "katemihf", "katewnuf"
+    "katenuhj", "katemijh", "kateplij", "katepogk", "katepuhg", "katewmuh", "katepeyh", "katepiuh", "kateoiuh", "kateqoju",
+    "kateighy", "katewuyt", "katemuyt", "katepyhf", "katepout", "katenufh", "katebytf", "katebmis", "kateeuhg", "katepnuh",
+    "katemuhy", "kateeyft", "katemutr", "katewnuy", "katemugy", "katenvyg", "kateqnuy", "katemuyg", "katemouj", "katecnyg",
+    "katemigu", "katemuuy", "katemoui", "katenugi", "katempoi", "kateiuyt", "katemiug", "katenytg", "katemiuy", "katemutg",
+    "katemthg", "katempih", "katepedf", "katemhol", "katequgh", "kateedcg", "kateiyjh"
   ];
 
-  const selected = usernames[Math.floor(Math.random() * usernames.length)];
-  const deepLink = `snapchat://add/${selected}`;
-  const webLink = `https://www.snapchat.com/add/${selected}`;
-
-  window.location = deepLink;
+  const username = usernames[Math.floor(Math.random() * usernames.length)];
+  window.location = `snapchat://add/${username}`;
   setTimeout(() => {
-    window.location = webLink;
+    window.location = `https://www.snapchat.com/add/${username}`;
   }, 200);
 </script>
