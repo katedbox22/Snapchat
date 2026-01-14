@@ -5,26 +5,17 @@
   const SERVER = "https://username-server.onrender.com";
 
   try {
-    const res = await fetch(`${SERVER}/api/usernames/random?status=${encodeURIComponent("Not completed")}`, {
-      cache: "no-store"
-    });
-
+    const statuses = encodeURIComponent("Not completed,No adds");
+    const res = await fetch(`${SERVER}/api/usernames/random?statuses=${statuses}`, { cache: "no-store" });
     if (!res.ok) throw new Error("No username available");
 
     const { username } = await res.json();
     if (!username) throw new Error("Bad response");
 
-    // Snapchat deep link (optional)
-    // window.location = `snapchat://add/${username}`;
-
-    // Web redirect
     window.location = `https://www.snapchat.com/add/${encodeURIComponent(username)}`;
   } catch (e) {
-    // fallback behavior if server has none
     console.error(e);
-    // Option A: do nothing
-    // Option B: redirect to a default username:
-    // window.location = "https://www.snapchat.com/add/yourfallback";
   }
 })();
 </script>
+
